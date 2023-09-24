@@ -1,46 +1,61 @@
-.inline{
-    display: inline;
-    padding: 10px;
-}
-
-div{
-    margin-top: 2%;
-}
-a{
-    text-decoration: none;
-}
-
-h2 {
-    text-align: center;
+body {
+    background-color: #eeeeeeec;
   }
 
+h1{
+  color: #131111;
+}
+
+p{
+  color: #515355;
+}
+  
+  #container {
+    background-color: #fff;
+    padding: 20px;
+    width: 60%;
+    margin: auto;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+  }
+  
   input {
-    margin-right: 15px;
-    margin-left: 15px;
-    margin-inline: 5px;
-  }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    border-spacing: 0;
-    table-layout: fixed;
+    border-color: rgb(70, 70, 70);
+    width: 50%;
+    padding: 10px;
+    border: 1px solid rgb(70, 70, 70);
+    border-radius: 5px;
+    margin-right: 10px;
   }
   
-  table thead tr th {
-    background-color: #ccc;
-    color: #000;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 600;
+  input:focus {
+    border-color: #000;
   }
+label{
+  width: 300px;
+  display: inline-block;
+  margin-left: 30px;
+}
 
-  select {
-    text-align: center;
-  }
+.botao {
+  border: solid 1px rgba(199, 119, 0, 0.856);
+  border-radius: 0px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(199, 119, 0, 0.856);
+  width: 120px; 
+  height: 40px; 
+  bottom: 120px; 
+  left: 220px; 
+  margin-left: 530px;
+}
 
-  section {
-    margin-top: 15px;
-    text-align: center;
-  }
-  
-  
+.botaoc{
+  border: solid 1px rgb(63, 90, 245);
+  border-radius: 0px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(63, 90, 245);
+  width: 140px; 
+  height: 40px;
+ 
+}
+

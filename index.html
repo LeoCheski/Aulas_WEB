@@ -1,110 +1,42 @@
-    <!DOCTYPE html>
-    <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Exercicio 4</title>
-        <style>
-            table{
-                width: 100%;
-                border-collapse:collapse;
-            }
-            td, th{
-                border: 1px solid black;
-                padding: 10px;
-                text-align: center;
-            }
-            th{
-                background-color: dimgray;
-            }
-        </style>
-    </head>
-    <body>
-        <main>
-            <section>
-                <h1>Cadastro e Listagem de Pontos</h1>
-                <hr>
-                <label for="motivo">Motivo: </label>
-                <input type="text" name="motivo" id="motivo" value=""> 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 6</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+</head>
+<body>
+    <main id="container">
+        <section>
+            <h1>Cadastro de Usuário</h1>
+            <p>Preencha o formulário abaixo para se cadastrar:</p>
+        <form>
+            <label for="nome" ><strong>Nome: </strong> </label>
+                <input type="name" name="nome" id="nome"  class="inblock"> <br><br>
+    
+            <label for="cpf"><strong>CPF: </strong> </label>
+                <input type="cpf" name="cpf" id="cpf"> <br><br>
+            
+            <label for="Senha"><strong>Senha: </strong> </label>
+                <input type="password" name="senha" id="senha"> <br><br>
 
-            <label for="data">Data:</label>
-                <input type="date" name="data" id="dataHora">
+            <label for="Senha"><strong>Confirme sua Senha: </strong> </label>
+                <input type="password" name="senha" id="senha"> <br><br>
+    
+            <label for="Telefone"><strong>Telefone: </strong> </label>
+                <input type="tel" name="numero" id="numero"><br><br>
                 
-                <label for="selecao">Select: </label>
-                <select name="select" id="selecao">
-                    <option value="op1">Entrada</option>
-                    <option value="op2">Saida<option>               
-                </select>
-                <input type="submit" value="Registrar Ponto" onclick="alert('Ponto registrado')">
-                    <hr>
-            </section>
+            <label for="email"><strong>Email:</strong></label>
+                <input type="email" name="email" id="email"><br><br>
 
-            <section>
-                <p><b>Nome: </b>Alberto Eistain &nbsp;&nbsp;&nbsp;&nbsp;<b>Cargo: </b>Portaria </p>
-            </section>
-            <section>
-                <p style="text-align: center;">Registros de Ponto.</p>
-            </section>
-            <section>
-            <table>
-                <tr>
-                    <th>Data</th>
-                    <th>Entrada</th>
-                    <th>Saida</th>
-                </tr>
-                <tr>
-                    <td rowspan="2">01/08/2023</td>
-                    <td>09:00</td>
-                    <td>18:00</td>
-                </tr>
-                <tr>
-                    <td>19:00</td>
-                    <td>21:00</td>
-                </tr>
-                <tr>
-                    <td>02/08/2023</td>
-                    <td colspan="2">Folga</td>
-                </tr>
-                <tr>
-                    <td rowspan="2">03/08/2023</td>
-                    <td>08:30</td>
-                    <td>17:45</td>
-                </tr>
-                <tr>
-                    <td>18:30</td>
-                    <td>22:00</td>
-                </tr>
-                <tr>
-                    <td>04/08/2023</td>
-                    <td colspan="2">Folga</td>
-                </tr>
-                <tr>
-                    <td rowspan="2">05/08/2023</td>
-                    <td>10:15</td>
-                    <td>18:30</td>
-                </tr>
-                <tr>
-                    <td>19:15</td>
-                    <td>21:45</td>
-                </tr>
-                <tr>
-                    <td>06/08/2023</td>
-                    <td colspan="2">Folga</td>
-                </tr>
-                <tr>
-                    <td rowspan="2">07/08/2023</td>
-                    <td>09:20</td>
-                    <td>18:30</td>
-                </tr>
-                <tr>
-                    <td>18:15</td>
-                    <td>21:00</td>
-                </tr>
-            </table>
-            <hr>
-            <p style="text-align: center;">Sistema de gestão de ponto&reg;</p>
-            </section>
-        </main>
-        
-    </body>
-    </html>
+                <div>
+                    <a href="URL"><button class="botao">Limpar</button></a>
+                    <a href="URL"><button class="botaoc" onclick="alert('Usuario cadastrado!!')">Cadastrar</button></a>
+                </div>
+        </form>
+        </section>
+    </main>
+</body>
+</html>
