@@ -1,125 +1,110 @@
     <!DOCTYPE html>
-    <html lang="pt-br">
+    <html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercicio 4</title>
         <style>
             table{
                 width: 100%;
+                border-collapse:collapse;
             }
-            td,th{
+            td, th{
                 border: 1px solid black;
                 padding: 10px;
                 text-align: center;
-            
             }
-            ul{
-                lis-style: none;
-                padding: 0px;
-            }
-            li{
-                float:left;
-                padding: 10px;
+            th{
+                background-color: dimgray;
             }
         </style>
     </head>
     <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="exercicio_3">Exercicio 1</a></li>
-                    <li><a href="outra.html">Exercicio 2</a></li>
-                </ul>
-            </nav>
-            <br><br>
-            <h2>Exercicio Tabelas</h2>
-            <h3>Tabela 1</h3>
-        </header>
         <main>
             <section>
-                <table>
-                    <thead>
-                    <tr>
-                        <th colspan="2"  rowspan="2">Produtos</th>
-                        <th colspan="8">Vendas por Região</th>
-                        <th colspan="2" rowspan="2">Total</th>
-                        </tr>
-                        <tr>
-                        <th colspan="2">Região Norte</th>
-                        <th colspan="2">Região Sul</th>
-                        <th colspan="2">Região Leste</th>
-                        <th colspan="2">Região Oeste</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td colspan="2" rowspan="3">Produto A</td>
-                        <td colspan="2">R$ 1.000,00</td>
-                        <td colspan="2">R$ 1.500,00</td>
-                        <td colspan="2">R$ 2.000,00</td>
-                        <td colspan="2">R$ 2.500,00</td>
-                        <td colspan="2">R$ 7.000,00</td>
-                        <tr>
-                        <td colspan="2">R$ 1.000,00</td>
-                        <td colspan="2">R$ 1.500,00</td>
-                        <td colspan="2">R$ 2.000,00</td>
-                        <td colspan="2">R$ 2.500,00</td>
-                        <td colspan="2">R$ 7.000,00</td>
-                        </tr>
-                        <tr>
-                        <td colspan="2">R$ 1.000,00</td>
-                        <td colspan="2">R$ 1.500,00</td>
-                        <td colspan="2">R$ 2.000,00</td>
-                        <td colspan="2">R$ 2.500,00</td>
-                        <td colspan="2">R$ 7.000,00</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" rowspan="2">Produto B</td>
-                        <td colspan="2">R$ 1.200,00</td>
-                        <td colspan="2">R$ 1.800,00</td>
-                        <td colspan="2">R$ 2.400,00</td>
-                        <td colspan="2">R$ 3.000,00</td>
-                        <td colspan="2">R$ 8.400,00</td>
-                        </tr>
-                        <tr>
-                        <td colspan="2">R$ 1.200,00</td>
-                        <td colspan="2">R$ 1.800,00</td>
-                        <td colspan="2">R$ 2.400,00</td>
-                        <td colspan="2">R$ 3.000,00</td>
-                        <td colspan="2">R$ 8.400,00</td>
-                    </tr>
-                    <tr>
-                        <td colspan="12"></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" rowspan="2">Produto C</td>
-                        <td colspan="2">R$ 1.400,00</td>
-                        <td colspan="2">R$ 2.100,00</td>
-                        <td colspan="2">R$ 2.800,00</td>
-                        <td colspan="2">R$ 3.500,00</td>
-                        <td colspan="2">R$ 9.800,00</td>
-                        </tr>
-                        <tr>
-                        <td colspan="2">R$ 1.400,00</td>
-                        <td colspan="2">R$ 2.100,00</td>
-                        <td colspan="2">R$ 2.800,00</td>
-                        <td colspan="2">R$ 3.500,00</td>
-                        <td colspan="2">R$ 9.800,00</td>
-                    </tr>
-                    <tr>
-                        <th colspan="10">Total Geral</th>
-                        <th colspan="2">R$ 25.200,00</th>
-                    </tr> 
-                    </tbody>
-                </table>
+                <h1>Cadastro e Listagem de Pontos</h1>
+                <hr>
+                <label for="motivo">Motivo: </label>
+                <input type="text" name="motivo" id="motivo" value=""> 
+
+            <label for="data">Data:</label>
+                <input type="date" name="data" id="dataHora">
+                
+                <label for="selecao">Select: </label>
+                <select name="select" id="selecao">
+                    <option value="op1">Entrada</option>
+                    <option value="op2">Saida<option>               
+                </select>
+                <input type="submit" value="Registrar Ponto" onclick="alert('Ponto registrado')">
+                    <hr>
             </section>
+
+            <section>
+                <p><b>Nome: </b>Alberto Eistain &nbsp;&nbsp;&nbsp;&nbsp;<b>Cargo: </b>Portaria </p>
+            </section>
+            <section>
+                <p style="text-align: center;">Registros de Ponto.</p>
+            </section>
+            <section>
+            <table>
+                <tr>
+                    <th>Data</th>
+                    <th>Entrada</th>
+                    <th>Saida</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">01/08/2023</td>
+                    <td>09:00</td>
+                    <td>18:00</td>
+                </tr>
+                <tr>
+                    <td>19:00</td>
+                    <td>21:00</td>
+                </tr>
+                <tr>
+                    <td>02/08/2023</td>
+                    <td colspan="2">Folga</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">03/08/2023</td>
+                    <td>08:30</td>
+                    <td>17:45</td>
+                </tr>
+                <tr>
+                    <td>18:30</td>
+                    <td>22:00</td>
+                </tr>
+                <tr>
+                    <td>04/08/2023</td>
+                    <td colspan="2">Folga</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">05/08/2023</td>
+                    <td>10:15</td>
+                    <td>18:30</td>
+                </tr>
+                <tr>
+                    <td>19:15</td>
+                    <td>21:45</td>
+                </tr>
+                <tr>
+                    <td>06/08/2023</td>
+                    <td colspan="2">Folga</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">07/08/2023</td>
+                    <td>09:20</td>
+                    <td>18:30</td>
+                </tr>
+                <tr>
+                    <td>18:15</td>
+                    <td>21:00</td>
+                </tr>
+            </table>
             <hr>
+            <p style="text-align: center;">Sistema de gestão de ponto&reg;</p>
+            </section>
         </main>
-        <footer>
-            <hr>
-            <p>
-                <small>Copyright<sup>&copy;</sup>2023 Baianos Sem Sono FC</small>
-            </p>
-        </footer>
+        
     </body>
     </html>
