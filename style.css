@@ -1,0 +1,46 @@
+.inline{
+    display: inline;
+    padding: 10px;
+}
+
+div{
+    margin-top: 2%;
+}
+a{
+    text-decoration: none;
+}
+
+h2 {
+    text-align: center;
+  }
+
+  input {
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-inline: 5px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+  }
+  
+  table thead tr th {
+    background-color: #ccc;
+    color: #000;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  select {
+    text-align: center;
+  }
+
+  section {
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  
