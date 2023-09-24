@@ -1,49 +1,125 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-</head>
-<body>
-    <header>
-        <h1>Home</h1>
-        <nav>
-             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
-
-             </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Formatação de texto</h2>
-            <ul>
-                <li><i>Este é um texto em ìtálico</i></li>
-                <li><em>Este é um texto em Enfase</em></li>
-                <li><b>ESte é um texto em Negrito</b></li>
-                <li><strong>ESte é um texto IMportante</strong></li>
-                <li><u>Este é um texto Sublinhado</u></li>
-                <li><ins>Este é um texto Inserido</ins></li>
-                <li><del>Este é um texto Deletado</del></li>
-                <li><small>Este é um texto pequeno</small></li>
-                <li><Sup>Este é um texto Sobescrito</Sup></li><br>
-                <li><sub>Este é um texto Subescrito</sub></li>
-                <li><mark>Este é um texto Marcado</mark></li>
-                <li><q>Este é um texto entre aspas</q></li>
-            </ul>
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            table{
+                width: 100%;
+            }
+            td,th{
+                border: 1px solid black;
+                padding: 10px;
+                text-align: center;
             
-        </section>
-        <section>
-            <h2>Anúncio</h2>
-                <p>Compre nossos produtos!</p>
-                <img src="monitor.webp" alt="Monitor" width="300">
-        </section>
-    </main>
-    <footer>
-        <p>
-            <small>Direitos Autorais<sup>&copy;</sup>2023 Meu Site</small>
-        </p>
-    </footer>
-</body>
+            }
+            ul{
+                lis-style: none;
+                padding: 0px;
+            }
+            li{
+                float:left;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="exercicio_3">Exercicio 1</a></li>
+                    <li><a href="outra.html">Exercicio 2</a></li>
+                </ul>
+            </nav>
+            <br><br>
+            <h2>Exercicio Tabelas</h2>
+            <h3>Tabela 1</h3>
+        </header>
+        <main>
+            <section>
+                <table>
+                    <thead>
+                    <tr>
+                        <th colspan="2"  rowspan="2">Produtos</th>
+                        <th colspan="8">Vendas por Região</th>
+                        <th colspan="2" rowspan="2">Total</th>
+                        </tr>
+                        <tr>
+                        <th colspan="2">Região Norte</th>
+                        <th colspan="2">Região Sul</th>
+                        <th colspan="2">Região Leste</th>
+                        <th colspan="2">Região Oeste</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td colspan="2" rowspan="3">Produto A</td>
+                        <td colspan="2">R$ 1.000,00</td>
+                        <td colspan="2">R$ 1.500,00</td>
+                        <td colspan="2">R$ 2.000,00</td>
+                        <td colspan="2">R$ 2.500,00</td>
+                        <td colspan="2">R$ 7.000,00</td>
+                        <tr>
+                        <td colspan="2">R$ 1.000,00</td>
+                        <td colspan="2">R$ 1.500,00</td>
+                        <td colspan="2">R$ 2.000,00</td>
+                        <td colspan="2">R$ 2.500,00</td>
+                        <td colspan="2">R$ 7.000,00</td>
+                        </tr>
+                        <tr>
+                        <td colspan="2">R$ 1.000,00</td>
+                        <td colspan="2">R$ 1.500,00</td>
+                        <td colspan="2">R$ 2.000,00</td>
+                        <td colspan="2">R$ 2.500,00</td>
+                        <td colspan="2">R$ 7.000,00</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" rowspan="2">Produto B</td>
+                        <td colspan="2">R$ 1.200,00</td>
+                        <td colspan="2">R$ 1.800,00</td>
+                        <td colspan="2">R$ 2.400,00</td>
+                        <td colspan="2">R$ 3.000,00</td>
+                        <td colspan="2">R$ 8.400,00</td>
+                        </tr>
+                        <tr>
+                        <td colspan="2">R$ 1.200,00</td>
+                        <td colspan="2">R$ 1.800,00</td>
+                        <td colspan="2">R$ 2.400,00</td>
+                        <td colspan="2">R$ 3.000,00</td>
+                        <td colspan="2">R$ 8.400,00</td>
+                    </tr>
+                    <tr>
+                        <td colspan="12"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" rowspan="2">Produto C</td>
+                        <td colspan="2">R$ 1.400,00</td>
+                        <td colspan="2">R$ 2.100,00</td>
+                        <td colspan="2">R$ 2.800,00</td>
+                        <td colspan="2">R$ 3.500,00</td>
+                        <td colspan="2">R$ 9.800,00</td>
+                        </tr>
+                        <tr>
+                        <td colspan="2">R$ 1.400,00</td>
+                        <td colspan="2">R$ 2.100,00</td>
+                        <td colspan="2">R$ 2.800,00</td>
+                        <td colspan="2">R$ 3.500,00</td>
+                        <td colspan="2">R$ 9.800,00</td>
+                    </tr>
+                    <tr>
+                        <th colspan="10">Total Geral</th>
+                        <th colspan="2">R$ 25.200,00</th>
+                    </tr> 
+                    </tbody>
+                </table>
+            </section>
+            <hr>
+        </main>
+        <footer>
+            <hr>
+            <p>
+                <small>Copyright<sup>&copy;</sup>2023 Baianos Sem Sono FC</small>
+            </p>
+        </footer>
+    </body>
+    </html>
