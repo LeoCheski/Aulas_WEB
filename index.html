@@ -1,42 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio 6</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="short icon" type="imagex/png" href="./assets/fuscanavegador.png">
+  <title>Só Carrão</title>
 </head>
 <body>
-    <main id="container">
-        <section>
-            <h1>Cadastro de Usuário</h1>
-            <p>Preencha o formulário abaixo para se cadastrar:</p>
-        <form>
-            <label for="nome" ><strong>Nome: </strong> </label>
-                <input type="name" name="nome" id="nome"  class="inblock"> <br><br>
-    
-            <label for="cpf"><strong>CPF: </strong> </label>
-                <input type="cpf" name="cpf" id="cpf"> <br><br>
-            
-            <label for="Senha"><strong>Senha: </strong> </label>
-                <input type="password" name="senha" id="senha"> <br><br>
 
-            <label for="Senha"><strong>Confirme sua Senha: </strong> </label>
-                <input type="password" name="senha" id="senha"> <br><br>
-    
-            <label for="Telefone"><strong>Telefone: </strong> </label>
-                <input type="tel" name="numero" id="numero"><br><br>
-                
-            <label for="email"><strong>Email:</strong></label>
-                <input type="email" name="email" id="email"><br><br>
+  <header>
+    <nav>
+      <ul class="navigation">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="table.html">Catálogo</a></li>
+        <li><a href="./produtos.html">Produtos</a></li>
+        <li><a href="./form.html">Fale Conosco</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div class="wrapper">
+    <main>
+      <section class="module parallax parallax-1">
+        <h1>Catálogo de Carros</h1>
+      </section>
 
-                <div>
-                    <a href="URL"><button class="botao">Limpar</button></a>
-                    <a href="URL"><button class="botaoc" onclick="alert('Usuario cadastrado!!')">Cadastrar</button></a>
-                </div>
-        </form>
-        </section>
+      <section class="module content">
+        <div  class="container">
+          <h2>Visão Geral</h2>
+          <p>
+            O Catálogos de Carros é uma plataforma online que visa ajudar entusiastas de carros, mecânicos, compradores e proprietários a acessar informações abrangentes sobre os carros Fusca e Chevette, incluindo detalhes de especificações, características, imagens e muito mais.
+          </p>
+
+        </div>
+      </section>
+
+      <section class="module parallax parallax-2"> 
+        <h1>Contexto Acadêmico</h1>
+      </section>
+
+      <section class="module content">
+        <div  class="container">        
+          <p>
+            Este projeto, Catálogos de Carros, foi desenvolvido como parte de um trabalho acadêmico para um curso na faculdade. É importante ressaltar que este site é estritamente para fins educacionais e de aprendizado, e não tem como objetivo fins comerciais ou lucrativos.
+          </p>
+          <h2>Objetivo do Trabalho</h2>
+          <p>
+            O objetivo principal deste projeto é aplicar os conhecimentos adquiridos durante o curso e demonstrar a capacidade de criar uma aplicação web funcional. O foco principal é a prática de desenvolvimento web.
+          </p>
+        </div>
+      </section>
     </main>
+  </div>
+
+
 </body>
 </html>
